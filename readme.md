@@ -15,3 +15,4 @@ Cieľom je overiť správnosť funkcií, API endpointov a logiky aplikácie.
 
 
 
+
