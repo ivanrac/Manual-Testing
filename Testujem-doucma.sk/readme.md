@@ -1,7 +1,7 @@
 # Test Cases
 
 Testujem stránku doučma.sk a všetky súbory súvisiace s ňou.
-Tento priečinok obsahuje testovacie prípady pre projekt **NÁZOV PROJEKTU**.  
+Tento priečinok obsahuje testovacie prípady pre projekt **Test-Doucma.sk**.  
 Cieľom je overiť správnosť funkcií, API endpointov a logiky aplikácie.
 
 ---
