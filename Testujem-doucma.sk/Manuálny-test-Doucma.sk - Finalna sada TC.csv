@@ -1,0 +1,158 @@
+Test Case ID,Test scenar,Test Steps, Test Data, Expected Result ,Status,Description bug,Suggestion
+"TC_01,Validné vyhľadávanie stranky doucma.sk v priehladaci ,""0.Otvorím prehliadač a do vyhľadávania zadám www.doucma.sk"
+1.Potvrdím stlačením enter
+,chrome, firefox,
+"edge"",""Zobrazí sa mi očakávaná úvodná obrazovka, vidím logo doučma.sk a hlavné menu"",Pass,,"
+"TC_02,Validné prihlásenie,""0.Stlačím button pre prihlásenie"
+1.Zadám platný prihlasovací email
+2.zadám platné prihlasovacie heslo
+3.Stlačím button pre prihlásenie
+,
+Skutočný email použitý pri registrácii
+Skutočné heslo vytvorené pri registrácii
+",Prihlási ma a otvorí sa mi očakávaná obrazovka s uvítacím pozdravom.(Meno zadané pri registrácii),Pass,,
+TC_03,Neplatné prihlásenie,0.Stlačím button pre prihlásenie"
+1.Zadám platný prihlasovací email
+2.Zadám neplatné prihlasovacie heslo
+3.Stlačím button pre prihlásenie
+,
+Skutočný  email použitý pri registrácii
+Iné heslo ako bolo vytvorené pri registrácii
+",Upozorní ma, že som zadal nesprávne heslo a nepovolí prihlásenie"",Pass,,"
+",,""0.Stlačím button pre prihlásenie"
+1.Zadám neplatný prihlasovací email
+2.Zadám platné prihlasovacie heslo
+3.Stlačím button pre prihlásenie
+,
+Iný email ako použitý pri registrácii
+Skutočné heslo vytvorené pri registrácii
+",Upozorní ma, že som zadal nesprávny email a nepovolí prihlásenie"",Pass,,"
+",,""0.Stlačím button pre prihlásenie"
+1.Zadám neplatný prihlasovací email
+2.Zadám neplatné prihlasovacie heslo
+3.Stlačím button pre prihlásenie
+,
+Iný email ako použitý pri registrácii
+Iné heslo ako bolo vytvorené pri registrácii
+",Upozorní ma, že som zadal neplatné prihlasovacie údaje"",Pass,,"
+"TC_04,Validné pridanie verejnej požiadavky o doučovanie,""0. Otvoril som stránku doucma.sk."
+1. Zadal som predmet (matematika) do vyhľadávania predmetov.
+"2. Stlačil som zadať požiadavku."",""Predmet: Matemtika"
+Veková kategória: Základná škola
+Popis: Mam syna potrebuje doučko.
+"Mesto: Bratislava"",""Pridá moju požiadavku na doučovanie, aby ju všetci doučovatelia videli."",Pass,,"
+"TC_05,Neplatné pridanie verejnej požiadavky o doučovanie,""0. Otvoril som stránku doucma.sk."
+1. Zadal som predmet (matematika) do vyhľadávania predmetov.
+2. Stlačil som zadať požiadavku.
+"3. Zadal som neplatné mesto"",""Predmet: Matemtika"
+Veková kategória: Základna škola
+Popis: Mám syna potrebuje doučko.
+"Mesto: 555"",""Upozorní ma,že som zle zadal mesto a nedovolí aby požiadavka bola viditeľná."",Pass,,"
+",,""0. Otvoril som stránku doucma.sk."
+1. Zadal som predmet (matematika) do vyhľadávania predmetov.
+2. Stlačil som zadať požiadavku.
+"3. Zadal som neplatný predmet"",""Predmet: 555"
+Veková kategória: Základna škola
+Popis: Mám syna potrebuje doučko.
+"Mesto: Bratislava"",""Upozorní ma,že som zadal zlý predmet a nedovolí aby požiadavka bola viditeľná."",Pass,,"
+",,""0. Otvoril som stránku doucma.sk."
+1. Zadal som predmet (matematika) do vyhľadávania predmetov.
+2. Stlačil som zadať požiadavku.
+"3. Zadal som neplatné mesto aj predmet"",""Predmet: 555"
+Veková kategória: Základna škola
+Popis: Mám syna potrebuje doučko.
+"Mesto: 555"",""Upozorní ma,že som zle zadal mesto aj zlý predmet a nedovolí aby požiadavka bola viditeľná."",Fail,Systém vypíše upozornenie len na neplatné zadanie mesta a neupozorní na neplatné zadanie predmetu.,V jednej hláške by mohol spomenúť obé chyby"
+"TC_06,Validné poslanie darčeka (Pozvanie priateľov na doučma),""0.Kliknem na logo darčeka v pravom hornom rohu"
+1.Kliknem na button kopírovať pozývací odkaz
+2.Kliknem na logo obálky 
+"3.Odošlem mail s pozývacím odkazom"",""""""Unikátny pozývací odkaz"""""",""Otvorí sa mi kontextove okno."
+Zobrazí sa mi pozývací kód.
+"Kliknutím na logo obálky ma presmeruje na predvolenú mailovú aplikáciu s novou správou"",Fail,""Kliknutím na logo obálky ma nepresmeruje na mail,ale otvorí prázdne okno prehliadača"",Systém by mal užívateľa presmerovať na predvolenú emailovú adresu"
+",,""0.Kliknem na logo darčeka v pravom hornom rohu"
+1.Kliknem na button kopírovať pozývací odkaz
+2.Kliknem na logo whats up
+"3.Odošlem správu s pozývacím odkazom"",""""""Unikátny pozývací odkaz"""""",""Otvorí sa mi kontextove okno."
+Zobrazí sa mi pozývací kód.
+"Kliknutím na logo whats up ma presmeruje na  aplikáciu"",Pass,,"
+",,""0.Kliknem na logo darčeka v pravom hornom rohu"
+1.Kliknem na button kopírovať pozývací odkaz
+2.Kliknem na logo facebook
+"3.Odošlem správu s pozývacím odkazom"",""""""Unikátny pozývací odkaz"""""",""Otvorí sa mi kontextove okno."
+Zobrazí sa mi pozývací kód.
+"Kliknutím na logo facebook ma presmeruje na  aplikáciu"",Pass,,"
+,,,,,,,
+,,,,,,,
+,,,,,,,
+",,""0.Kliknem na logo darčeka v pravom hornom rohu"
+"1.Kliknem na logo QR kód"",""""""Unikátny QR kód obahujúci pozývaci odkaz"""""",""Otvorí sa mi kontextové okno"
+"Zobrazí sa mi QR kód"",Pass,,"
+"TC_07,Validné pridanie študijnej otázky,""0.Kliknem na „Študijné otázky“ na stránke"
+1.Kliknem na button pridať otázku
+"2.Do plíčka """"Názov otázky"""" zadám otázku"
+"3.Do políčka """"Detail otázky"""" zadám popis otázky"
+"4.Do políčka """"Na aký predmet sa otázka vzťahuje"""" zadám predmet"
+5.Kliknem na políčko „Anonymný príspevok“, aby bol príspevok anonymný
+"6.Kliknem na button „Odoslať otázku“"",""Názov otázky: 2+2"
+Detail otázky: Kto mi pomôže
+"Predmet : matematika"",""Zobrazí sa potvrdzujúce hlásenie, že otázka bola úspešne odoslaná."
+
+Moja otázka sa zobrazí v zozname otázok  v novom okne.
+
+"Ak je zaškrtnuté „Anonymný príspevok“, otázka sa zobrazí anonymne (bez mena používateľa)"",Pass,,"
+",,"""
+
+0.Kliknem na „Študijné otázky“ na stránke
+1.Kliknem na button pridať otázku
+"2.Do plíčka """"Názov otázky"""" zadám otázku"
+"3.Do políčka """"Detail otázky"""" zadám popis otázky"
+"4.Do políčka """"Na aký predmet sa otázka vzťahuje"""" zadám predmet"
+"5.Nekliknem na políčko """"Anonymný príspevok“, aby nebol príspevok anonymný"
+"6.klikne na button „Odoslať otázku“"",""Názov otázky: 2+2"
+Detail otázky: Kto mi pomôže
+"Predmet:  matematika"",""Zobrazí sa potvrdzujúce hlásenie, že otázka bola úspešne odoslaná."
+
+Moja otázka sa zobrazí v zozname otázok v novom okne.
+
+"Ak nieje zaškrtnuté „Anonymný príspevok“, otázka sa zobrazí  (s menom používateľa)"",Pass,,"
+"TC_08,Nevalidné pridanie študijnej otázky,""0.Kliknem na „Študijné otázky“ na stránke."
+1.Kliknem na tlačidlo Pridať otázku.
+2.Nezadám názov otázky.
+3.Do políčka Detail otázky zadám popis otázky.
+4.Do políčka Predmet zadám predmet.
+"5.Nezaškrtnem políčko """"Anonymný príspevok""""."
+"6.Kliknem na tlačidlo Odoslať otázku."",""Názov otázky: -"
+Detail otázky: Kto mi pomôže
+"Predmet: matematika"",""Zobrazí sa hlásenie „Vyplňte toto pole“ priamo v danom políčku, ktoré som otázku nezadal"",Pass,,"
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+",,""0.Kliknem na „Študijné otázky“ na stránke."
+1.Kliknem na tlačidlo Pridať otázku.
+2.Do políčka Názov otázky zadám otázku.
+3.Do políčka Detail otázky zadám popis otázky.
+4.Nezadám predmet.
+"5.Nezaškrtnem políčko """"Anonymný príspevok""""."
+"6.Kliknem na tlačidlo Odoslať otázku."",""Názov otázky: 2+2"
+Detail otázky: Kto mi pomôže
+"Predmet : -"",""Zobrazí sa hlásenie „Vyplňte toto pole“ priamo v danom políčku, ktoré som nezadal predmet"",Pass,,"
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+",,""0.Kliknem na „Študijné otázky“ na stránke."
+1.Kliknem na tlačidlo Pridať otázku.
+2.Do políčka Názov otázky zadám otázku.
+3.Do políčka Detail otázky zadám popis otázky.
+4.Do políčka Predmet zadám neplatný vstup (predmet, ktorý neexistuje).
+"5.Nezaškrtnem políčko """"Anonymný príspevok""""."
+"6.Kliknem na tlačidlo Odoslať otázku."",""Názov otázky: 2+2"
+Detail otázky: Kto mi pomôže
+"Predmet : ddd"",""Zadaný predmet sa nepodarilo nájsť. Skús prosím vybrať niektorý z predmetov, ktoré sa zobrazia v ponuke, keď začneš písať do políčka pre zadanie predmetu."",Pass,,"
