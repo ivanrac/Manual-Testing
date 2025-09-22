@@ -1,0 +1,211 @@
+Test Case ID,Test scenar,Test Steps, Test Data, Expected Result , Status,Description bug,Sugesstion
+TC_01,Validné: všetky polia vyplnené správne,"1. Vyber kontaktné miesto Trenčín
+2. Vyber dátum návštevy
+3. Vyber účel návštevy
+4. Vyber formu návštevy
+5. Vyplň Meno a priezvisko
+6. Vyplň Email
+7. Vyplň Telefón
+8. Vyplň Poznámku
+9. Zaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. 20.09.2025
+3. Platobná karta
+4. Fyzická osoba
+5. Ivan Rac
+6. ivan@example.com
+7. 0912345678
+8. Testovací text
+9. súhlas zaškrtnutý
+","Stretnutie úspešne rezervované, zobrazí sa potvrdenie",OK,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+TC_02,Nevalidné:do políčka pre email zadaj neplatný email,"1. Vyber kontaktné miesto Trenčín
+2. Vyber dátum návštevy
+3. Vyber účel návštevy
+4. Vyber formu návštevy
+5. Vyplň Meno a priezvisko
+6. Vyplň Email
+7. Vyplň Telefón
+8. Vyplň Poznámku
+9. Zaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. 20.09.2025
+3. Platobná karta
+4. Fyzická osoba
+5. Ivan Rac
+6. ivan@
+7. 0912345678
+8. Testovací text
+9. súhlas zaškrtnut
+",Zobrazí sa chybová hláška pri poli Email,OK,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+TC_03,Nevalidné: políčko pre email ponehaj prázdne,"1. Vyber kontaktné miesto Trenčín
+2. Vyber dátum návštevy
+3. Vyber účel návštevy
+4. Vyber formu návštevy
+5. Vyplň Meno a priezvisko
+6. Nevyplň Email
+7. Vyplň Telefón
+8. Vyplň Poznámku
+9. Zaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. 20.09.2025
+3. Platobná karta
+4. Fyzická osoba
+5. Ivan Rac
+6. -
+7. 0912345678
+8. Testovací text
+9. súhlas zaškrtnut
+",Zobrazí sa chybová hláška pri poli Email,OK,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+TC_04,Nevalidné: políčko pre meno a priezvisko ponehaj prázdne,"1. Vyber kontaktné miesto Trenčín
+2. Vyber dátum návštevy
+3. Vyber účel návštevy
+4. Vyber formu návštevy
+5. Nevyplň Meno a priezvisko
+6. Vyplň Email
+7. Vyplň Telefón
+8. Vyplň Poznámku
+9. Zaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. 20.09.2025
+3. Platobná karta
+4. Fyzická osoba
+5. -
+6. ivan@
+7. 0912345678
+8. Testovací text
+9. súhlas zaškrtnut",Zobrazí sa chybová hláška pri poli Meno,OK,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+TC_05,Nevalidné: Nevybraný dátum,"1. Vyber kontaktné miesto Trenčín
+2. Nevyber dátum návštevy
+3. Vyber účel návštevy
+4. Vyber formu návštevy
+5. Vyplň Meno a priezvisko
+6. Vyplň Email
+7. Vyplň Telefón
+8. Vyplň Poznámku
+9. Zaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. -
+3. Platobná karta
+4. Fyzická osoba
+5. Ivan Rac
+6. ivan@
+7. 0912345678
+8. Testovací text
+9. súhlas zaškrtnut",Zobrazí sa chybová hláška pri poli Dátum,OK,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+TC_06,Nevalidné: Nevybraný účel návštevy,"1. Vyber kontaktné miesto Trenčín
+2. Vyber dátum návštevy
+3. Nevyber účel návštevy
+4. Vyber formu návštevy
+5. Vyplň Meno a priezvisko
+6. Vyplň Email
+7. Vyplň Telefón
+8. Vyplň Poznámku
+9. Zaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. 20.09.2025
+3. -
+4. Fyzická osoba
+5. Ivan Rac
+6. ivan@
+7. 0912345678
+8. Testovací text
+9. súhlas zaškrtnut",Zobrazí sa chybová hláška pri poli Účel návštevy,OK,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+TC_07,Nevlidné: Neoznačený súhlas,"1. Vyber kontaktné miesto Trenčín
+2. Vyber dátum návštevy
+3. Vyber účel návštevy
+4. Vyber formu návštevy
+5. Vyplň Meno a priezvisko
+6. Vyplň Email
+7. Vyplň Telefón
+8. Vyplň Poznámku
+9. Nezaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. 20.09.2025
+3. Platobná karta
+4. Fyzická osoba
+5. Ivan Rac
+6. ivan@
+7. 0912345678
+8. Testovací text
+9. súhlas nezaškrtnut","Zobrazí sa chybová hláška, stretnutie sa neodošle",OK,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+TC_08,Nevalidné: Nesprávny formát telefónu,"1. Vyber kontaktné miesto Trenčín
+2. Vyber dátum návštevy
+3. Vyber účel návštevy
+4. Vyber formu návštevy
+5. Vyplň Meno a priezvisko
+6. Vyplň Email
+7. Vyplň Telefón
+8. Vyplň Poznámku
+9. Zaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. 20.09.2025
+3. Platobná karta
+4. Fyzická osoba
+5. Ivan Rac
+6. ivan@
+7. abc123
+8. Testovací text
+9. súhlas zaškrtnut",Zobrazí sa chybová hláška pri poli Telefón,OK,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+TC_09,Nevalidné: Prázdny telefón,"1. Vyber kontaktné miesto Trenčín
+2. Vyber dátum návštevy
+3. Vyber účel návštevy
+4. Vyber formu návštevy
+5. Vyplň Meno a priezvisko
+6. Vyplň Email
+7. Nevyplň Telefón
+8. Vyplň Poznámku
+9. Zaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. 20.09.2025
+3. Platobná karta
+4. Fyzická osoba
+5. Ivan Rac
+6. ivan@
+7. -
+8. Testovací text
+9. súhlas zaškrtnut",Zobrazí sa chybová hláška pri poli Telefón,OK,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+TC_10,Nevalidné: Dlhá poznámka,"1. Vyber kontaktné miesto Trenčín
+2. Vyber dátum návštevy
+3. Vyber účel návštevy
+4. Vyber formu návštevy
+5. Vyplň Meno a priezvisko
+6. Vyplň Email
+7. Vyplň Telefón
+8. Vyplň Poznámku
+9. Zaškrtni Súhlas
+10. Klikni „Odoslať“","1. Trenčín
+2. 20.09.2025
+3. Platobná karta
+4. Fyzická osoba
+5. Ivan Rac
+6. ivan@
+7. 0912345678
+8. 2000 znakov
+9. súhlas zaškrtnut",Formulár zobrazuje chybu alebo odoslanie podľa limitu,NOK,"Formulár pri zadaní maximálneho počtu znakov, má na to neupozorní a formulár odošle aj s neuplným textom v poznámke.","Textové pole s počítadlom znakov , ktoré mení farbu podľa počtu zostávajúcich znakov (zelená → oranžová → červená) a numerické pole s maximálnou hodnotou, pri dosiahnutí limitu sa zobrazí vizuálna indikácia a progress bar mení farbu podľa blízkosti maxima."
