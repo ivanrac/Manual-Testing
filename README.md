@@ -1,0 +1,1 @@
+Priečinok obsahuje tri samostatné repozitáre určené na tréning testovania!
