@@ -35,4 +35,4 @@ Príklady sú vytvorené na základe rôznorodých domén, aby demonštrovali un
 
 Tento repozitár je primárne referenčná dokumentácia. Na jeho použitie stačí:
 
-1.  **Klonovanie:** Stiahnite si dokumenty pre použitie ako
+1.  **Klonovanie:** 
